@@ -1,7 +1,7 @@
 public class Main {
+    public static void main(String[] args) {
+        Tasks tasks = new Tasks();
 
-    public long digPow(int n, int p) {
-        // your code
-        return -1;
+        tasks.order("Thi1s is2 T4est 3a");
     }
 }
