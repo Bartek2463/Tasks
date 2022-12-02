@@ -1,14 +1,23 @@
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Tasks {
     public String order(String words) {
+        return Arrays.stream(words.replaceAll("[^a-z]", "").split(""))
+                .sorted(Comparator.comparing(String::toString)).distinct().reduce(String::concat).get();
 
-        String s1 = Arrays.stream(words.split(" "))
-                .sorted(Comparator.comparing(s -> Integer.valueOf(s.replaceAll("[^0-9]",""))))
-                .reduce((a, b) -> a + " " + b).get();
-        System.out.println(s1);
-        return s1;
     }
+    public String orderInteger(String words){
+        List<String> collect = Arrays.stream(words.split(""))
+                .sorted(Comparator.comparing(String::toString))
+                .collect(Collectors.toList());
+
+
+        System.out.println(collect);
+
+        return null;
+    }
+
 }
