@@ -21,7 +21,7 @@ public class Tasks {
     }
 
     public static String oddOrEven (int[] array) {
-        return array.length==0? new int[]{0}:
-
+        int sum = IntStream.of(array).sum();
+        return sum%2==0||array.length==0 ? "even": "add";
     }
 }
