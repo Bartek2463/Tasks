@@ -20,4 +20,8 @@ public class Tasks {
         return null;
     }
 
+    public static String oddOrEven (int[] array) {
+        return array.length==0? new int[]{0}:
+
+    }
 }
