@@ -31,7 +31,21 @@ public class Main {
 //        System.out.println("Algoritm.silnia(5) = " + Algoritm.silnia(5));
 //        System.out.println("Algoritm.silnia(5) = " + Algoritm.silniaIteration(5));
 //        System.out.println("Algoritm.fib2Iteration(8) = " + Algoritm.fib2Iteration(8));
-        Algoritm.FizzBuzz(100);
+//        Algoritm.FizzBuzz(100);
+
+
+        // przykładowe użycie funkcji
+//        String inputStr = "Today, is the greatest day ever! blblblbl";
+//        String result = FirstWord.firstWordWithMostRepeatedLetters(inputStr);
+//        System.out.println(result); // powinno wypisać "Java"
+//
+//        String inputStr = "Ptr";
+//        String result = FirstWord.findWordWithMostRepeatedLetters(inputStr);
+//        System.out.println(result); // powinno wypisać "Java"
+
+           //  FirstWord.findToken("n40a36eh5");
+        SecureTester.alphanumeric("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
 
     }
+
 }
